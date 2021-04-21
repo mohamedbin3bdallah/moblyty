@@ -1,0 +1,20 @@
+Options -Indexes -MultiViews
+
+#DirectoryIndex under_construction.html index.html index.php
+
+RewriteEngine on
+#RewriteBase /
+RewriteCond %{REQUEST_URI} !^/rss/?$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Custom error pages.
+ErrorDocument 403 /404.shtml
+ErrorDocument 404 /404.shtml
+ErrorDocument 500 /500.shtml
+
+# Prevent viewing of htaccess file.
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>

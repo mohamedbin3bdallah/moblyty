@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: 
+Disallow: /ajaxs/
+Disallow: /bootstrap/
+Disallow: /fonts/
+Disallow: /css/
+Disallow: /designs/
+Disallow: /develops/
+Disallow: /js/
+Disallow: /languages/
+Disallow: /libs/
+Disallow: /pages/
